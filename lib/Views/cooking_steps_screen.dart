@@ -131,12 +131,22 @@ class CookingStepsScreen extends StatelessWidget {
                 _buildStep(
                   step: 1,
                   title: "Prepare the Ingredients",
-                  description: "Wash, chop, and measure out all ingredients according to the amounts above.",
+                  description: "Wash, cut, and measure all ingredients according to the quantities listed above.",
                 ),
                 _buildStep(
                   step: 2,
-                  title: "Cooking & Simmering",
-                  description: "Follow specific cooking temperature and time instructions for this recipe.",
+                  title: "Cook on Medium Heat",
+                  description: "Preheat your pan or pot with a small amount of oil or butter. Cook until evenly browned.",
+                ),
+                _buildStep(
+                  step: 3,
+                  title: "Simmer & Season",
+                  description: "Add your spices and sauce, reduce to low heat, and let it simmer for the recommended time.",
+                ),
+                _buildStep(
+                  step: 4,
+                  title: "Serve Fresh",
+                  description: "Garnish with fresh herbs and serve hot. Enjoy your homemade dish!",
                 ),
               ],
             ),
