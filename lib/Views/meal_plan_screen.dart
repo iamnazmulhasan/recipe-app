@@ -24,7 +24,22 @@ class _MealPlanScreenState extends State<MealPlanScreen> {
       "image":
           "https://images.unsplash.com/photo-1569718212165-3a8278d5f624?w=400",
     },
-
+    {
+      "meal": "Lunch",
+      "recipe": "French Toast with Berries",
+      "time": "20 Min",
+      "cal": "110 Cal",
+      "image":
+          "https://images.unsplash.com/photo-1484723091739-30a097e8f929?w=400",
+    },
+    {
+      "meal": "Dinner",
+      "recipe": "Beef Steak with Veggies",
+      "time": "25 Min",
+      "cal": "140 Cal",
+      "image":
+          "https://images.unsplash.com/photo-1544025162-d76694265947?w=400",
+    },
   ];
 
   @override
