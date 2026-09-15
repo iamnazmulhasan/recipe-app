@@ -70,13 +70,13 @@ class NotificationsScreen extends StatelessWidget {
                     borderRadius: BorderRadius.circular(15),
                     border: isUnread
                         ? Border.all(
-                            color: kprimaryColor.withOpacity(0.4),
+                            color: kprimaryColor.withValues(alpha: 0.4),
                             width: 1.5,
                           )
                         : null,
                     boxShadow: [
                       BoxShadow(
-                        color: Colors.black.withOpacity(0.03),
+                        color: Colors.black.withValues(alpha: 0.03),
                         blurRadius: 10,
                         offset: const Offset(0, 4),
                       ),
@@ -88,7 +88,7 @@ class NotificationsScreen extends StatelessWidget {
                       CircleAvatar(
                         radius: 22,
                         backgroundColor: isUnread
-                            ? kprimaryColor.withOpacity(0.15)
+                            ? kprimaryColor.withValues(alpha: 0.15)
                             : Colors.grey.shade100,
                         child: Icon(
                           item['icon'] as IconData,

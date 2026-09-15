@@ -98,7 +98,7 @@ class _MealPlanScreenState extends State<MealPlanScreen> {
                         borderRadius: BorderRadius.circular(20),
                         boxShadow: [
                           BoxShadow(
-                            color: Colors.black.withOpacity(0.03),
+                            color: Colors.black.withValues(alpha: 0.03),
                             blurRadius: 10,
                             offset: const Offset(0, 4),
                           ),
@@ -150,7 +150,7 @@ class _MealPlanScreenState extends State<MealPlanScreen> {
                     vertical: 4,
                   ),
                   decoration: BoxDecoration(
-                    color: kprimaryColor.withOpacity(0.15),
+                    color: kprimaryColor.withValues(alpha: 0.15),
                     borderRadius: BorderRadius.circular(12),
                   ),
                   child: const Text(
@@ -179,7 +179,7 @@ class _MealPlanScreenState extends State<MealPlanScreen> {
                     borderRadius: BorderRadius.circular(20),
                     boxShadow: [
                       BoxShadow(
-                        color: Colors.black.withOpacity(0.03),
+                        color: Colors.black.withValues(alpha: 0.03),
                         blurRadius: 10,
                         offset: const Offset(0, 4),
                       ),
@@ -194,7 +194,7 @@ class _MealPlanScreenState extends State<MealPlanScreen> {
                           width: 80,
                           height: 80,
                           fit: BoxFit.cover,
-                          errorBuilder: (_, __, ___) => Container(
+                          errorBuilder: (_, _, _) => Container(
                             width: 80,
                             height: 80,
                             color: Colors.grey.shade200,
@@ -216,7 +216,7 @@ class _MealPlanScreenState extends State<MealPlanScreen> {
                                 vertical: 2,
                               ),
                               decoration: BoxDecoration(
-                                color: kBannerColor.withOpacity(0.2),
+                                color: kBannerColor.withValues(alpha: 0.2),
                                 borderRadius: BorderRadius.circular(8),
                               ),
                               child: Text(
