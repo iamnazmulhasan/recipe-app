@@ -96,3 +96,6 @@ lib/firebase_options.dart
 *.keystore
 *.jks
 key.properties
+
+# Local documentation & raw capture folder
+Screenshots of Features/

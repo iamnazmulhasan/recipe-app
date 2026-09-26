@@ -11,17 +11,43 @@ A modern, responsive, and feature-rich **Flutter Recipe Application** built with
 This application was developed as a complete, faithful replica and architectural enhancement of the tutorial:
 📺 **[Complete Flutter App Using Flutter Firebase and Provider - Recipe App](https://www.youtube.com/watch?v=JdVu04EC7kE)**.
 
-While the original tutorial covered fundamental UI and basic favorites, this repository goes several steps further by delivering a production-grade culinary companion packed with advanced features such as an **interactive step-by-step cooking mode with a live timer**, a **weekly meal planner with daily calorie tracking**, an **instant live recipe search engine**, and a **customizable settings and culinary preferences panel**.
+While the original tutorial covered fundamental UI and basic favorites, this repository goes several steps further by delivering a production-grade culinary companion packed with advanced features such as an **interactive step-by-step cooking mode with a live countdown timer**, a **7-day weekly meal planner with daily calorie tracking**, an **instant real-time recipe search engine**, and a **customizable settings and culinary preferences panel**.
+
+---
+
+## 📱 App Walkthrough & Visual Tour
+
+Explore the complete feature set and user journey across this Flutter Recipe App:
+
+### 🏠 Discovery & Category Browsing
+| Home Screen | Breakfast Category | Lunch Category | Dinner Category |
+| :---: | :---: | :---: | :---: |
+| <img src=".github/screenshots/01_home_screen.png" width="220" alt="Home Screen" /><br><sub><b>Home Screen</b><br>Auto-scrolling banner carousel, category pills & trending recipe cards</sub> | <img src=".github/screenshots/02_category_breakfast.png" width="220" alt="Breakfast Category" /><br><sub><b>Breakfast Filter</b><br>Instant category filtering showing morning meal options & calorie stats</sub> | <img src=".github/screenshots/03_category_lunch.png" width="220" alt="Lunch Category" /><br><sub><b>Lunch Filter</b><br>Midday delights with review counts, star ratings, and cook times</sub> | <img src=".github/screenshots/04_category_dinner.png" width="220" alt="Dinner Category" /><br><sub><b>Dinner Filter</b><br>Hearty evening meals filtered in real-time with responsive layout</sub> |
+
+### 🔍 Catalog & Live Search Engine
+| Full Recipe Catalog | Search Overview | Live Keyword Search | Recipe Detail |
+| :---: | :---: | :---: | :---: |
+| <img src=".github/screenshots/05_view_all_catalog.png" width="220" alt="Full Recipe Catalog" /><br><sub><b>Catalog Grid ("View All")</b><br>Two-column responsive grid with quick category filter chips</sub> | <img src=".github/screenshots/06_search_overview.png" width="220" alt="Search Overview" /><br><sub><b>Search Hub</b><br>Instant search interface with suggested popular craving tags</sub> | <img src=".github/screenshots/07_search_results.png" width="220" alt="Search Results" /><br><sub><b>Live Search Results</b><br>Real-time fuzzy search as you type (e.g. "avoc" matching avocado salad)</sub> | <img src=".github/screenshots/08_recipe_detail.png" width="220" alt="Recipe Detail" /><br><sub><b>Recipe Detail (1 Serving)</b><br>Hero photography, nutritional stats, ingredients list & instruction tabs</sub> |
+
+### 🍳 Interactive Cooking & Scaling
+| Dynamic Servings Multiplier | Add to Favorites | Step-by-Step Cooking Mode | Saved Favorites |
+| :---: | :---: | :---: | :---: |
+| <img src=".github/screenshots/09_servings_multiplier.png" width="220" alt="Servings Multiplier" /><br><sub><b>Dynamic Scaling (6 Servings)</b><br>Reactive mathematical scaling of all ingredient amounts in real-time</sub> | <img src=".github/screenshots/10_add_to_favorites.png" width="220" alt="Add to Favorites" /><br><sub><b>Instant Bookmarking</b><br>One-tap heart toggle with snackbar alert & Cloud Firestore synchronization</sub> | <img src=".github/screenshots/11_cooking_steps_mode.png" width="220" alt="Cooking Steps Mode" /><br><sub><b>Interactive Cooking Mode</b><br>Hands-on checklist walkthrough with built-in live countdown timer</sub> | <img src=".github/screenshots/12_favorites_collection.png" width="220" alt="Favorites Collection" /><br><sub><b>Favorites Screen</b><br>Persistent collection of saved recipes with live stream & one-tap removal</sub> |
+
+### 📅 Planning, Notifications & Settings
+| Weekly Meal Planner | Notification Center | User Settings & Preferences | Open Source Licenses |
+| :---: | :---: | :---: | :---: |
+| <img src=".github/screenshots/13_weekly_meal_planner.png" width="220" alt="Weekly Meal Planner" /><br><sub><b>Weekly Meal Planner</b><br>7-day schedule with meal slots (Breakfast, Lunch, Dinner) & calorie totals</sub> | <img src=".github/screenshots/14_notification_center.png" width="220" alt="Notification Center" /><br><sub><b>Notification Center</b><br>Daily culinary tips, meal reminders, announcements & unread badges</sub> | <img src=".github/screenshots/15_user_settings.png" width="220" alt="User Settings" /><br><sub><b>User Profile & Settings</b><br>Culinary preferences, units toggle (Metric/Imperial) & image cache manager</sub> | <img src=".github/screenshots/16_license_attribution.png" width="220" alt="License Attribution" /><br><sub><b>License Attribution</b><br>Comprehensive open-source software license registry powered by Flutter</sub> |
 
 ---
 
 ## 🚀 Key Features & Overview
 
 ### 1. 🏠 Explore & Discover (Home Screen)
-- **Auto-Scrolling Banner Carousel**: Dynamic promotional slider highlighting trending recipes and chef specials with smooth animated page indicators.
-- **Category Filter Pills**: Filter recipes seamlessly across Breakfast, Lunch, Dinner, Dessert, and Fast Food categories.
+- **Auto-Scrolling Banner Carousel**: Dynamic promotional slider highlighting trending recipes and chef specials with smooth animated page indicators and touch gesture support.
+- **Category Filter Pills**: Filter recipes seamlessly across Breakfast, Lunch, Dinner, Dessert, and Fast Food categories with instant visual feedback.
 - **Responsive Recipe Cards**: Custom card components showing high-resolution food thumbnails, review counts, star ratings, calorie badges, and preparation times.
-- **Quick-Access "View All"**: Dedicated catalog screen allowing users to browse recipes with category chips and a two-column responsive grid.
+- **Quick-Access "View All"**: Dedicated catalog screen allowing users to browse recipes with category chips and a two-column responsive grid layout.
 
 ### 2. 📖 Recipe Details & Dynamic Ingredient Calculator
 - **Hero Image Header**: Full-bleed imagery with smooth back navigation and real-time favorite toggling.
@@ -30,7 +56,7 @@ While the original tutorial covered fundamental UI and basic favorites, this rep
 - **Interactive Cooking Mode Entrypoint**: Direct CTA to launch into guided hands-on cooking.
 
 ### 3. 👨‍🍳 Guided Cooking Steps Mode (*Beyond Tutorial*)
-- **Step-by-Step Checklist**: Interactive recipe walkthrough allowing home cooks to check off steps as they go.
+- **Step-by-Step Checklist**: Interactive recipe walkthrough allowing home cooks to check off steps as they complete each technique.
 - **Built-in Cooking Countdown Timer**: Start, pause, and reset timer directly in the app so food is never overcooked.
 - **Live Progress Tracking**: Visual progress bar indicating completion percentage.
 - **Celebration Modal**: Rewarding completion dialog when the dish is ready to serve.
@@ -43,7 +69,7 @@ While the original tutorial covered fundamental UI and basic favorites, this rep
 
 ### 5. 🔍 Real-Time Recipe Search (*Beyond Tutorial*)
 - **Instant Live Filtering**: As-you-type search matching recipe titles, ingredients, and categories.
-- **Quick Category Tags**: One-tap query tags for popular cravings.
+- **Quick Category Tags**: One-tap query tags for popular cravings (e.g., Avocado, Chicken, Salad, Pasta).
 - **Empty States**: Friendly illustrated fallbacks when no recipes match query criteria.
 
 ### 6. ❤️ Real-Time Favorites System
@@ -83,9 +109,46 @@ While the original tutorial covered fundamental UI and basic favorites, this rep
 
 ---
 
-## 🏗️ Architecture & Project Structure
+## 🏗️ Architecture & Data Flow
 
-The project follows a clean, modular structure separating UI screens, widgets, state providers, domain models, and utilities:
+```mermaid
+flowchart TD
+    subgraph UI ["Presentation Layer (Flutter Views)"]
+        Home["🏠 MyAppHomeScreen"]
+        Detail["📖 RecipeDetailScreen"]
+        Cook["👨‍🍳 CookingStepsScreen"]
+        Search["🔍 RecipeSearchScreen"]
+        Favs["❤️ FavoriteScreen"]
+        Meal["📅 MealPlanScreen"]
+        Settings["⚙️ SettingScreen"]
+    end
+
+    subgraph State ["State Management (Provider)"]
+        QP["🔢 QuantityProvider<br/>(Servings Multiplier & Scaling)"]
+        FP["❤️ FavoriteProvider<br/>(Local Cache & Firestore Sync)"]
+    end
+
+    subgraph Firebase ["Backend & Storage (Cloud Firestore)"]
+        FS_Recipes[("📂 Complete-Flutter-App<br/>(Recipe Documents)")]
+        FS_Favs[("📂 userFavorites<br/>(Bookmarked Recipe IDs)")]
+        FS_Seed["🌱 FirebaseDataSeeder<br/>(Bootstrap Initial Records)"]
+    end
+
+    Home -->|Streams Recipes| FS_Recipes
+    Search -->|Filters Collection| FS_Recipes
+    Detail -->|Observes / Multiplies| QP
+    Detail -->|Toggles Bookmark| FP
+    Favs -->|Streams Bookmarks| FP
+    FP <-->|Real-time Snapshot Sync| FS_Favs
+    FS_Seed -->|Uploads Initial Catalog| FS_Recipes
+    Detail -->|Launches Steps & Timer| Cook
+```
+
+---
+
+## 📂 Project Structure
+
+The project follows a clean, modular structure separating presentation, state providers, utilities, and assets:
 
 ```
 lib/
